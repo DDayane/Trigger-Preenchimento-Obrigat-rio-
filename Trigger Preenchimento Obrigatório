@@ -1,0 +1,5 @@
+trigger LeadDesc on Lead (after update){
+ if(Trigger.isUpdate) 
+     if(Trigger.isAfter)
+    LeadDescHandler.descricaodeperdido(Trigger.new);
+}
