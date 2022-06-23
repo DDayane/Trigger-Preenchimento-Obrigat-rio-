@@ -1,0 +1,9 @@
+public class LeadDescHandler {
+    public static void descricaodeperdido(List<Lead> leadD){
+    	for(Lead Ld : leadD){
+       	 if(Ld.Status =='Perdido' && Ld.Description == null){
+        	Ld.Description.addError('Se o Lead for perdido, detalhe a razão da perda');
+        }   
+    }
+  }
+}
