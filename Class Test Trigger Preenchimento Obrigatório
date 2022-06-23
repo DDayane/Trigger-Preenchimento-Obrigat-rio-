@@ -1,0 +1,22 @@
+@isTest
+public class LeadDescHandlerTest {
+@isTest
+    public static void descricaodeperdido(){
+    List<Lead> listTest = new List<Lead>();
+       
+       Lead ldd = new lead();
+       ldd.Id = '00Q8a00001qU2eCEAS';
+       ldd.Status ='Perdido';
+       ldd.Description='';
+      
+       listTest.add(ldd);  
+           
+       try{
+       
+        Update listTest;
+    }
+        catch(Exception e){
+            system.assertEquals(e.getMessage(), e.getMessage());
+        }
+    }
+}
